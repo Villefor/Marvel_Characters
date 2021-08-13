@@ -18,12 +18,6 @@ export default function Marvel() {
 
   return (
     <section>
-      <input type="text" />
-      <select onChange={(e) => handle(e, setComp)}>
-        <option value="Name">Name</option>
-        <option value="Comics">Comics</option>
-        <option value="Stories">Stories</option>
-      </select>
       {post.length > 0
         ? post.map((heroes) => (
           <section id="characters" key={heroes}>
